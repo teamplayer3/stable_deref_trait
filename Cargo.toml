@@ -12,10 +12,11 @@ An unsafe marker trait for types like Box and Rc that dereference to a stable ad
 """
 
 [dependencies]
-futures-util = {version = "0.3.21", optional = true}
+# futures-util = {version = "0.3.21", optional = true}
+futures-util ="0.3.21"
 
 [features]
 default = ["std"]
 std = ["alloc"]
 alloc = []
-futures = ["futures-util"]
+# futures = ["futures-util"]

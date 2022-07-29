@@ -195,7 +195,7 @@ unsafe impl<'a, T: ?Sized> StableDeref for RwLockReadGuard<'a, T> {}
 #[cfg(feature = "std")]
 unsafe impl<'a, T: ?Sized> StableDeref for RwLockWriteGuard<'a, T> {}
 
-#[cfg(feature = "features")]
+// #[cfg(feature = "features")]
 unsafe impl<'a, T: ?Sized> StableDeref for futures_util::lock::MutexGuard<'a, T> {}
 
 unsafe impl<'a, T: ?Sized> StableDeref for &'a T {}
